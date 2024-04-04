@@ -16,7 +16,7 @@ new Vue({
 
 const goEasy = GoEasy.getInstance({
     host: 'hangzhou.goeasy.io', //应用所在的区域地址: 【hangzhou.goeasy.io |singapore.goeasy.io】
-    appkey: `${process.env.GO_EASY_APP_COMMON_KEY}`, // common key,
+    appkey: process.env.GO_EASY_APP_COMMON_KEY, // common key,
     modules: ['im'],
 });
 
